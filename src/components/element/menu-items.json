@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_element_menu_items",
+  "info": {
+    "displayName": "Menu Items",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "menuItem": {
+      "type": "string"
+    },
+    "menuItemUrl": {
+      "type": "string"
+    }
+  }
+}
