@@ -69,6 +69,19 @@ export interface ElementSocials extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementServicesSection extends Struct.ComponentSchema {
+  collectionName: 'components_element_services_sections';
+  info: {
+    displayName: 'Services Section';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    cards: Schema.Attribute.Component<'element.cards', true>;
+  };
+}
+
 export interface ElementMenuItems extends Struct.ComponentSchema {
   collectionName: 'components_element_menu_items';
   info: {
@@ -134,6 +147,20 @@ export interface ElementFeaturesSection extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementCards extends Struct.ComponentSchema {
+  collectionName: 'components_element_cards';
+  info: {
+    displayName: 'Cards';
+    icon: 'crown';
+    description: '';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+  };
+}
+
 export interface ElementButton extends Struct.ComponentSchema {
   collectionName: 'components_element_buttons';
   info: {
@@ -153,11 +180,13 @@ declare module '@strapi/strapi' {
       'section.header': SectionHeader;
       'section.footer': SectionFooter;
       'element.socials': ElementSocials;
+      'element.services-section': ElementServicesSection;
       'element.menu-items': ElementMenuItems;
       'element.languages-switcher': ElementLanguagesSwitcher;
       'element.language-notification': ElementLanguageNotification;
       'element.features-text': ElementFeaturesText;
       'element.features-section': ElementFeaturesSection;
+      'element.cards': ElementCards;
       'element.button': ElementButton;
     }
   }

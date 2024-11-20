@@ -29,6 +29,12 @@
       "type": "component",
       "repeatable": false,
       "component": "element.features-section"
+    },
+    "servicesSection": {
+      "displayName": "Services Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "element.services-section"
     }
   }
 }
