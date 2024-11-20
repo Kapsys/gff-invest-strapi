@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_element_features_sections",
+  "info": {
+    "displayName": "Features section",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "leftImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "featureText": {
+      "displayName": "Features Text",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.features-text"
+    }
+  }
+}

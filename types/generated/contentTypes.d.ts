@@ -540,6 +540,10 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     title: Schema.Attribute.String;
     slug: Schema.Attribute.String;
     heroSection: Schema.Attribute.Component<'section.hero-section', false>;
+    featuresSection: Schema.Attribute.Component<
+      'element.features-section',
+      false
+    >;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

@@ -107,6 +107,33 @@ export interface ElementLanguageNotification extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementFeaturesText extends Struct.ComponentSchema {
+  collectionName: 'components_element_features_texts';
+  info: {
+    displayName: 'Features Text';
+    icon: 'command';
+    description: '';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+  };
+}
+
+export interface ElementFeaturesSection extends Struct.ComponentSchema {
+  collectionName: 'components_element_features_sections';
+  info: {
+    displayName: 'Features section';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    leftImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    featureText: Schema.Attribute.Component<'element.features-text', true>;
+  };
+}
+
 export interface ElementButton extends Struct.ComponentSchema {
   collectionName: 'components_element_buttons';
   info: {
@@ -129,6 +156,8 @@ declare module '@strapi/strapi' {
       'element.menu-items': ElementMenuItems;
       'element.languages-switcher': ElementLanguagesSwitcher;
       'element.language-notification': ElementLanguageNotification;
+      'element.features-text': ElementFeaturesText;
+      'element.features-section': ElementFeaturesSection;
       'element.button': ElementButton;
     }
   }
