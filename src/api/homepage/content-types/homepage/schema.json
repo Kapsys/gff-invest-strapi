@@ -33,7 +33,7 @@
     "servicesSection": {
       "displayName": "Services Section",
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "element.services-section"
     }
   }

@@ -79,6 +79,7 @@ export interface ElementServicesSection extends Struct.ComponentSchema {
   attributes: {
     title: Schema.Attribute.String;
     cards: Schema.Attribute.Component<'element.cards', true>;
+    itHasBackground: Schema.Attribute.Boolean;
   };
 }
 
