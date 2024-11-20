@@ -17,6 +17,12 @@
       "type": "component",
       "repeatable": false,
       "component": "section.header"
+    },
+    "footer": {
+      "displayName": "Footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.footer"
     }
   }
 }

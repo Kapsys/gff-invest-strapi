@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_element_socials",
+  "info": {
+    "displayName": "Socials",
+    "icon": "eye",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "socialIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "socialUrl": {
+      "type": "string"
+    }
+  }
+}

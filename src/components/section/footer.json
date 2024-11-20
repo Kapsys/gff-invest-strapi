@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_section_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "emotionHappy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menuItems": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.menu-items"
+    },
+    "socials": {
+      "displayName": "Socials",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.socials"
+    }
+  }
+}

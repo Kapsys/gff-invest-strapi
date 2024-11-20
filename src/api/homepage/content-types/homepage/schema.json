@@ -4,7 +4,8 @@
   "info": {
     "singularName": "homepage",
     "pluralName": "homepages",
-    "displayName": "Homepage"
+    "displayName": "Homepage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,12 @@
     },
     "slug": {
       "type": "text"
+    },
+    "heroSection": {
+      "displayName": "Hero Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.hero-section"
     }
   }
 }
