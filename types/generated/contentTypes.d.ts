@@ -538,7 +538,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
   };
   attributes: {
     title: Schema.Attribute.String;
-    slug: Schema.Attribute.Text;
+    slug: Schema.Attribute.String;
     heroSection: Schema.Attribute.Component<'section.hero-section', false>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;

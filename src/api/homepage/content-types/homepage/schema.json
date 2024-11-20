@@ -16,7 +16,7 @@
       "type": "string"
     },
     "slug": {
-      "type": "text"
+      "type": "string"
     },
     "heroSection": {
       "displayName": "Hero Section",

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_element_languages_switchers",
+  "info": {
+    "displayName": "Languages Switcher",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    }
+  }
+}

@@ -29,6 +29,18 @@
       "type": "component",
       "repeatable": false,
       "component": "element.button"
+    },
+    "languagesSwitcher": {
+      "displayName": "Languages Switcher",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.languages-switcher"
+    },
+    "languageNotification": {
+      "displayName": "Language Notification",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.language-notification"
     }
   }
 }

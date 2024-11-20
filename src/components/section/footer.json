@@ -9,7 +9,7 @@
   "attributes": {
     "menuItems": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "element.menu-items"
     },
     "socials": {

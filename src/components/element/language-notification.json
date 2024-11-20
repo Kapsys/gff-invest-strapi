@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_element_language_notifications",
+  "info": {
+    "displayName": "Language Notification",
+    "icon": "connector"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "langKey": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    }
+  }
+}
