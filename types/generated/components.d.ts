@@ -54,6 +54,23 @@ export interface SectionFooter extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionExpertSection extends Struct.ComponentSchema {
+  collectionName: 'components_section_expert_sections';
+  info: {
+    displayName: 'Expert Section';
+    icon: 'chartPie';
+    description: '';
+  };
+  attributes: {
+    expertImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    button: Schema.Attribute.Component<'element.button', false>;
+  };
+}
+
 export interface ElementSocials extends Struct.ComponentSchema {
   collectionName: 'components_element_socials';
   info: {
@@ -180,6 +197,7 @@ declare module '@strapi/strapi' {
       'section.hero-section': SectionHeroSection;
       'section.header': SectionHeader;
       'section.footer': SectionFooter;
+      'section.expert-section': SectionExpertSection;
       'element.socials': ElementSocials;
       'element.services-section': ElementServicesSection;
       'element.menu-items': ElementMenuItems;

@@ -548,6 +548,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       'element.services-section',
       true
     >;
+    expertSection: Schema.Attribute.Component<'section.expert-section', false>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

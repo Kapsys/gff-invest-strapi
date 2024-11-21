@@ -35,6 +35,12 @@
       "type": "component",
       "repeatable": true,
       "component": "element.services-section"
+    },
+    "expertSection": {
+      "displayName": "Expert Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.expert-section"
     }
   }
 }
