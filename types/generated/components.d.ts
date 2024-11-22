@@ -159,11 +159,12 @@ export interface ElementInfos extends Struct.ComponentSchema {
   info: {
     displayName: 'Infos';
     icon: 'cog';
+    description: '';
   };
   attributes: {
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     name: Schema.Attribute.String;
-    content: Schema.Attribute.Text;
+    content: Schema.Attribute.String;
   };
 }
 
