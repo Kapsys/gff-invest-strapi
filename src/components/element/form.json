@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_element_forms",
+  "info": {
+    "displayName": "Form",
+    "icon": "envelop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "formInputs": {
+      "displayName": "Form Inputs",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.form-inputs"
+    }
+  }
+}

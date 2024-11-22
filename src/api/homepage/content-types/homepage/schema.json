@@ -10,37 +10,82 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "heroSection": {
       "displayName": "Hero Section",
       "type": "component",
       "repeatable": false,
-      "component": "section.hero-section"
+      "component": "section.hero-section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "featuresSection": {
       "displayName": "Features section",
       "type": "component",
       "repeatable": false,
-      "component": "element.features-section"
+      "component": "element.features-section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "servicesSection": {
       "displayName": "Services Section",
       "type": "component",
       "repeatable": true,
-      "component": "element.services-section"
+      "component": "element.services-section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "expertSection": {
       "displayName": "Expert Section",
       "type": "component",
       "repeatable": false,
-      "component": "section.expert-section"
+      "component": "section.expert-section",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contactUs": {
+      "displayName": "Contact Us",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.contact-us",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

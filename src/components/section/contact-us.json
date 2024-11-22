@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_section_contact_uses",
+  "info": {
+    "displayName": "Contact Us",
+    "icon": "stack",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "infos": {
+      "displayName": "Infos",
+      "type": "component",
+      "repeatable": true,
+      "component": "element.infos"
+    },
+    "form": {
+      "displayName": "Form",
+      "type": "component",
+      "repeatable": false,
+      "component": "element.form"
+    },
+    "button": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    }
+  }
+}

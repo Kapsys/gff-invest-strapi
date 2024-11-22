@@ -71,6 +71,22 @@ export interface SectionExpertSection extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionContactUs extends Struct.ComponentSchema {
+  collectionName: 'components_section_contact_uses';
+  info: {
+    displayName: 'Contact Us';
+    icon: 'stack';
+    description: '';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    infos: Schema.Attribute.Component<'element.infos', true>;
+    form: Schema.Attribute.Component<'element.form', false>;
+    button: Schema.Attribute.Component<'element.button', false>;
+  };
+}
+
 export interface ElementSocials extends Struct.ComponentSchema {
   collectionName: 'components_element_socials';
   info: {
@@ -138,6 +154,43 @@ export interface ElementLanguageNotification extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementInfos extends Struct.ComponentSchema {
+  collectionName: 'components_element_infos';
+  info: {
+    displayName: 'Infos';
+    icon: 'cog';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+    content: Schema.Attribute.Text;
+  };
+}
+
+export interface ElementForm extends Struct.ComponentSchema {
+  collectionName: 'components_element_forms';
+  info: {
+    displayName: 'Form';
+    icon: 'envelop';
+    description: '';
+  };
+  attributes: {
+    formInputs: Schema.Attribute.Component<'element.form-inputs', true>;
+  };
+}
+
+export interface ElementFormInputs extends Struct.ComponentSchema {
+  collectionName: 'components_element_form_inputs';
+  info: {
+    displayName: 'Form Inputs';
+    icon: 'attachment';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['text', 'phone', 'email', 'textarea']>;
+  };
+}
+
 export interface ElementFeaturesText extends Struct.ComponentSchema {
   collectionName: 'components_element_features_texts';
   info: {
@@ -198,11 +251,15 @@ declare module '@strapi/strapi' {
       'section.header': SectionHeader;
       'section.footer': SectionFooter;
       'section.expert-section': SectionExpertSection;
+      'section.contact-us': SectionContactUs;
       'element.socials': ElementSocials;
       'element.services-section': ElementServicesSection;
       'element.menu-items': ElementMenuItems;
       'element.languages-switcher': ElementLanguagesSwitcher;
       'element.language-notification': ElementLanguageNotification;
+      'element.infos': ElementInfos;
+      'element.form': ElementForm;
+      'element.form-inputs': ElementFormInputs;
       'element.features-text': ElementFeaturesText;
       'element.features-section': ElementFeaturesSection;
       'element.cards': ElementCards;
