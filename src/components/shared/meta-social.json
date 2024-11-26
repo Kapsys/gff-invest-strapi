@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_meta_socials",
+  "info": {
+    "displayName": "Meta Social",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+   "socialNetwork": {
+      "type": "enumeration",
+      "enum": [
+        "Twitter",
+        "Facebook"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
