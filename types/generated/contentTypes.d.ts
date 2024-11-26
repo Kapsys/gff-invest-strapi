@@ -501,6 +501,7 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
     singularName: 'contact-page';
     pluralName: 'contact-pages';
     displayName: 'Contact Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -514,6 +515,7 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

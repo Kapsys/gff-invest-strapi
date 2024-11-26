@@ -200,6 +200,7 @@ export interface ElementInfos extends Struct.ComponentSchema {
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     name: Schema.Attribute.String;
     content: Schema.Attribute.String;
+    link: Schema.Attribute.String;
   };
 }
 
