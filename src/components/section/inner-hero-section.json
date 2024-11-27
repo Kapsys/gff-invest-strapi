@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_inner_hero_sections",
+  "info": {
+    "displayName": "Inner Hero Section",
+    "icon": "expand"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
