@@ -86,6 +86,11 @@ export interface SectionFooter extends Struct.ComponentSchema {
   attributes: {
     menuItems: Schema.Attribute.Component<'element.menu-items', true>;
     socials: Schema.Attribute.Component<'element.socials', true>;
+    logoText: Schema.Attribute.String;
+    kapsysLogo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    kapsysLogoLink: Schema.Attribute.String;
   };
 }
 
