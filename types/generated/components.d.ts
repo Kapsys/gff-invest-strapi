@@ -35,6 +35,18 @@ export interface SharedMetaSocial extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionLegalsSection extends Struct.ComponentSchema {
+  collectionName: 'components_section_legals_sections';
+  info: {
+    displayName: 'Legals Section';
+    icon: 'bell';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+  };
+}
+
 export interface SectionInnerHeroSection extends Struct.ComponentSchema {
   collectionName: 'components_section_inner_hero_sections';
   info: {
@@ -303,6 +315,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'shared.seo': SharedSeo;
       'shared.meta-social': SharedMetaSocial;
+      'section.legals-section': SectionLegalsSection;
       'section.inner-hero-section': SectionInnerHeroSection;
       'section.hero-section': SectionHeroSection;
       'section.header': SectionHeader;

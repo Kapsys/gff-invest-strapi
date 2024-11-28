@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "terms_of_uses",
+  "info": {
+    "singularName": "terms-of-use",
+    "pluralName": "terms-of-uses",
+    "displayName": "Terms of Use",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "legalsSection": {
+      "displayName": "Legals Section",
+      "type": "component",
+      "repeatable": true,
+      "component": "section.legals-section"
+    },
+    "innerHeroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.inner-hero-section"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
