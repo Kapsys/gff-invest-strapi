@@ -524,7 +524,10 @@ export interface ApiAboutUsPageAboutUsPage extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
-    expertSection: Schema.Attribute.Component<'section.expert-section', false> &
+    featuresSection: Schema.Attribute.Component<
+      'element.features-section',
+      false
+    > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

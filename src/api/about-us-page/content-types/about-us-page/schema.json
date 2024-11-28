@@ -32,11 +32,11 @@
         }
       }
     },
-    "expertSection": {
-      "displayName": "Expert Section",
+    "featuresSection": {
+      "displayName": "Features section",
       "type": "component",
       "repeatable": false,
-      "component": "section.expert-section",
+      "component": "element.features-section",
       "pluginOptions": {
         "i18n": {
           "localized": true
