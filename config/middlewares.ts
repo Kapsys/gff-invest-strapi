@@ -10,6 +10,7 @@ export default [
                     'connect-src': ["'self'", 'https:'],
                     'img-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 's3.eu-central-1.amazonaws.com'],
                     'media-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 's3.eu-central-1.amazonaws.com'],
+                    'script-src': ["'self'", 'https://cdn.ckeditor.com'],
                     upgradeInsecureRequests: null,
                 },
             },
