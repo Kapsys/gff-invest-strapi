@@ -40,10 +40,18 @@ export interface SectionLegalsSection extends Struct.ComponentSchema {
   info: {
     displayName: 'Legals Section';
     icon: 'bell';
+    description: '';
   };
   attributes: {
     title: Schema.Attribute.String;
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'rich';
+        }
+      >;
   };
 }
 
