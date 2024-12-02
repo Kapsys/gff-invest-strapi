@@ -49,7 +49,7 @@ export interface SectionLegalsSection extends Struct.ComponentSchema {
         'plugin::ckeditor.CKEditor',
         {
           output: 'HTML';
-          preset: 'rich';
+          preset: 'standard';
         }
       >;
   };
