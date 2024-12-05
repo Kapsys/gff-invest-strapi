@@ -156,6 +156,9 @@ export interface SectionContactUs extends Struct.ComponentSchema {
     infos: Schema.Attribute.Component<'element.infos', true>;
     form: Schema.Attribute.Component<'element.form', false>;
     button: Schema.Attribute.Component<'element.button', false>;
+    privacyPolicyText: Schema.Attribute.String;
+    privacyText: Schema.Attribute.String;
+    privacyPolicyUrl: Schema.Attribute.String;
   };
 }
 
